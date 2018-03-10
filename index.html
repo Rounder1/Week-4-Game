@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Crystal Collector</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets\javascript\game.js"></script>
+</head>
+<body>
+
+    <div class="container"> 
+
+        <div class="row">
+            <div class="jumbotron">
+                <h1 class="display-3">Crystal Game</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+
+                <div class="panel panel-primary">
+                    <div class="panel-heading">How to Play</div>
+                    <div class="panel-body">
+                        You will be given a random number at the start of the game.
+
+                        There are four crystals below. By clicking on a crystal you a specific amount of points to your total score.
+
+                        <br><br>
+
+                        You win the game by matching your total score to the random number, you loose the game if your total score goes above the random number.
+
+                        <br><br>
+
+                        The value of each crystal is hidden from you until you click on it.
+
+                        Each time when the game starts, the game will change values of each crystal.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-6">
+
+                <div class="panel panel-primary">
+                    <div class="panel-heading">Click a Crystal</div>
+                    <p></p>
+                    <img class="crystal_button" id="red_crystal" src="assets\images\Red.png" alt="Red Crystal">
+                    <img class="crystal_button" id="blue_crystal" src="assets\images\Blue.png" alt="Blue Crystal">
+                    <img class="crystal_button" id="yellow_crystal" src="assets\images\Yellow.png" alt="Yellow Crystal">
+                    <img class="crystal_button" id="green_crystal" src="assets\images\Green.png" alt="Green Crystal">
+                </div>
+            </div>
+
+            <div class="col-md-3">
+
+                <div class="panel panel-primary">
+                    <div class="panel-heading">Wins and losses</div>
+                        <div class="panel-body">
+
+                        <p class="win_loss_alert"></p>
+                        <p id="player_wins"></p>
+                        <p id="player_losses"></p>
+                        <br>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+
+                <div class="panel panel-primary">
+                    <div class="panel-heading">Goal and Score</div>
+                    <div class="panel-body">
+
+                    <p class="win_loss_alert"></p>
+                    <p id="goal_number"></p>
+                    <p id="current_number"></p>
+                    <br>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+</body>
+</html>
